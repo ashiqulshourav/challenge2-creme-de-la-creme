@@ -189,8 +189,8 @@ section {
 }
 
 .hamburger-menu {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,12 +217,12 @@ section {
 }
 
 .active span:first-child {
-    transform: rotate(45deg) translateX(-.2rem);
+    transform: rotate(45deg) translateX(-.1rem);
     transform-origin: left;
 }
 
 .active span:last-child {
-    transform: rotate(-45deg) translateX(-.2rem);
+    transform: rotate(-45deg) translateX(-.1rem);
     transform-origin: left;
 }
 
@@ -807,6 +807,16 @@ header .hero {
 /* Responsive */
 
 @media (max-width: 992px) {
+    #navbar .brand {
+        width: 4rem;
+        height: 4rem;
+    }
+    .topmenu {
+        height: 5rem;
+    }
+    #navbar {
+        height: 5rem;
+    }
     .hamburger-menu {
         display: flex;
     }
@@ -819,7 +829,7 @@ header .hero {
         left: 0;
         right: 0;
         bottom: 0;
-        transform: translateY(7rem);
+        transform: translateY(5rem);
         transition: 0.3s all ease;
         overflow: hidden;
     }
